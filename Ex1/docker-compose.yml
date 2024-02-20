@@ -1,0 +1,11 @@
+version: "1"
+services:
+  vnc_demo:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: vnc_demo
+    ports:
+      - "2202:22"
+      - "59022:5902"
+      - "59011:5901"
